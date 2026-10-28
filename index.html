@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Guideregion: a tourist guide to lakes, canyons and historical sites of the region.">
+  <title>Guideregion — Sights of Your Region</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <input type="checkbox" id="theme-toggle" class="visually-hidden" aria-label="Dark theme">
+
+  <header>
+    <h1 class="logo">Guideregion</h1>
+
+    <input type="checkbox" id="burger-toggle" class="visually-hidden" aria-label="Open menu">
+    <label for="burger-toggle" class="burger" aria-hidden="true">☰</label>
+
+    <nav aria-label="Main navigation">
+      <input type="search" name="location" placeholder="Search by location" aria-label="Search by location">
+      <a href="#places">Top Places</a>
+      <a href="#routes">Routes</a>
+      <a href="#tips">Tips for Tourists</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h2>Discover the Amazing Places of Your Region</h2>
+      <a href="#routes" class="cta">Choose a Tour</a>
+    </section>
+
+    <section id="places" class="grid-section">
+      <h2>Top Places</h2>
+
+      <article class="card">
+        <img src="images/place1.jpg" alt="Big Almaty Lake in the mountains" loading="lazy">
+        <h3>Big Almaty Lake</h3>
+        <p class="tag">Hiking</p>
+        <p>Expert rating: ★★★★★</p>
+      </article>
+
+      <article class="card">
+        <img src="images/place2.jpg" alt="Charyn Canyon red rock formations" loading="lazy">
+        <h3>Charyn Canyon</h3>
+        <p class="tag">4x4</p>
+        <p>Expert rating: ★★★★★</p>
+      </article>
+
+      <article class="card">
+        <img src="images/place3.png" alt="Historical site" loading="lazy">
+        <h3>Historical Site</h3>
+        <p class="tag">Hiking</p>
+        <p>Expert rating: ★★★★★</p>
+      </article>
+    </section>
+
+    <section id="routes" class="form-section">
+      <h2>Route Configurator</h2>
+      <p>Tell us about your trip and we will send the route map.</p>
+
+      <form action="#" method="post">
+        <label for="days">Duration (in days)</label>
+        <input type="number" id="days" name="days" min="1" max="30" placeholder="3" required>
+
+        <label for="group">Group Size</label>
+        <input type="number" id="group" name="group" min="1" max="50" placeholder="4" required>
+
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone" name="phone" placeholder="+7 700 000 00 00" required>
+
+        <label for="email">Email for Sending the Map in PDF Format</label>
+        <input type="email" id="email" name="email" placeholder="name@example.com" required>
+
+        <button type="submit">Get Route</button>
+      </form>
+    </section>
+
+    <section id="tips" class="tips">
+      <h2>Tips for Tourists</h2>
+      <article>
+        <h3>Dress for the mountains</h3>
+        <p>It is cold near the lake even in summer. Take warm layers and sturdy shoes.</p>
+      </article>
+      <article>
+        <h3>Check access rules</h3>
+        <p>Entry rules for protected areas can change. Check the current rules before the trip.</p>
+      </article>
+      <article>
+        <h3>Tell someone your route</h3>
+        <p>Carry water, charge your phone and share your plan with a friend.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <nav aria-label="Footer navigation">
+      <a href="#places">Top Places</a>
+      <a href="#routes">Routes</a>
+      <a href="#tips">Tips for Tourists</a>
+      <a href="#">Certified Guides</a>
+    </nav>
+    <p>Rescue service: <a href="tel:112">112</a></p>
+    <p>© 2026 Guideregion. All rights reserved.</p>
+    <label for="theme-toggle" class="theme-btn">Switch theme</label>
+  </footer>
+</body>
+</html>
